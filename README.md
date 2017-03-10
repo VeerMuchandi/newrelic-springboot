@@ -31,7 +31,7 @@ Go to OpenShift Web Console, find the template with name `springboot-newrelic` a
 You will have to fill the following parameters to create your application.		
 1. `APPLICATION_NAME` - Name of your application on OpenShift		
 2. `NEWRELIC_APPNAME` - Name of your application on New Relic		
-3. `NEWRELIC_ENCODED_LICENSE` - Base64 encoded value of your license key. You can encode it here [https://www.base64decode.org/](https://www.base64decode.org/). The template will create a secret using this license key and mount it during the build process.		 	
+3. `NEWRELIC_LICENSE` - = Your license key. The template will create a secret using this license key and mount it during the build process.		 	
 4. `GIT_URI` - The git URI for your Spring Boot source code			
 
 There are a few other optional parameters that you can change as per your needs.
