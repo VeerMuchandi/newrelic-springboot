@@ -12,8 +12,8 @@
             "metadata": {
                 "name": "newrelic-secret"
             },
-            "data": {
-                "NEWRELIC_LICENSE": "${NEWRELIC_ENCODED_LICENSE}"
+            "stringData": {
+                "NEWRELIC_LICENSE": "${NEWRELIC_LICENSE}"
             },
             "type": "Opaque"
         },
@@ -274,9 +274,9 @@
             "required": true
         },
         {
-            "name": "NEWRELIC_ENCODED_LICENSE",
-            "displayName": "New Relic Base64 Encoded License ",
-            "description": "Provide Base64 encoded value of your New Relic License.",
+            "name": "NEWRELIC_LICENSE",
+            "displayName": "New Relic License ",
+            "description": "Provide your New Relic License key here.",
             "required": true
         },
         {
