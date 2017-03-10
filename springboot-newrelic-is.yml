@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: ImageStream
+metadata:
+  generation: 2
+  name: springboot-newrelic
+spec:
+  tags:
+  - annotations:
+      description: Spring Boot S2I Image with New Relic CentOS based
+      iconClass: icon-jboss
+      supports: springboot,java:8,maven
+      tags: builder,springboot,java,maven
+      version: "1.0"
+    from:
+      kind: DockerImage
+      name: veermuchandi/springboot-newrelic-centos
+    generation: 1
+    importPolicy: {}
+    name: latest
