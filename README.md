@@ -14,14 +14,14 @@ oc new-project myproject
 **Step 2** Add this New Relic + Java image-stream to your project.
 
 ```
-oc create -f 
+oc create -f https://raw.githubusercontent.com/VeerMuchandi/newrelic-springboot/master/springboot-newrelic-is.yml
 ```
 Alternately, you can add this to the openshift namespace, if you want this accessible across all the projects.
 
 **Step 3** Add the template to your project. This allows you create your Spring Boot application easily.
 
 ```
-oc create -f 
+oc create -f https://raw.githubusercontent.com/VeerMuchandi/newrelic-springboot/master/springboot-newrelic-template.json
 ```
 
 **Step 4** Deploy your application	
